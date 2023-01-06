@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_server.html" title="Server class that handles requests.">Server</a> class that handles requests.  
+<p>This file contains the server documentation to handle requests. Each server has a name and a request data member (nullptr if no request has been assigned). After each clock cycle, updateTime decrements the request time by 1 and sets the request to nullptr if the request has been processed.  
  <a href="class_server.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -97,14 +97,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af10eb97ea56c6c394748ded14032e698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for request object.  <br /></td></tr>
 <tr class="separator:af10eb97ea56c6c394748ded14032e698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6615e2e8e97a41b0b82dab7471133a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server.html#a6615e2e8e97a41b0b82dab7471133a8b">updateTime</a> (int clockCycle)</td></tr>
-<tr class="memdesc:a6615e2e8e97a41b0b82dab7471133a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the time remaining for the request to be completed.  <br /></td></tr>
+<tr class="memdesc:a6615e2e8e97a41b0b82dab7471133a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the time remaining for the request to be completed and sets the request to nullptr if the request has finished processing.  <br /></td></tr>
 <tr class="separator:a6615e2e8e97a41b0b82dab7471133a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5ecc6af39de245913467102017d131"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server.html#aec5ecc6af39de245913467102017d131">isAvailable</a> ()</td></tr>
 <tr class="memdesc:aec5ecc6af39de245913467102017d131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the server is available to handle a new request.  <br /></td></tr>
 <tr class="separator:aec5ecc6af39de245913467102017d131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_server.html" title="Server class that handles requests.">Server</a> class that handles requests. </p>
+<div class="textblock"><p>This file contains the server documentation to handle requests. Each server has a name and a request data member (nullptr if no request has been assigned). After each clock cycle, updateTime decrements the request time by 1 and sets the request to nullptr if the request has been processed. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad7c180851101793b964d1ebafb1e437b" name="ad7c180851101793b964d1ebafb1e437b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7c180851101793b964d1ebafb1e437b">&#9670;&#160;</a></span>getName()</h2>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Getter for server name. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_server.html" title="Server class that handles requests.">Server</a> name as a string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_server.html" title="This file contains the server documentation to handle requests. Each server has a name and a request ...">Server</a> name as a string </dd></dl>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
 <p>Setter for server name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td><a class="el" href="class_server.html" title="Server class that handles requests.">Server</a> name as a string </td></tr>
+    <tr><td class="paramname">name</td><td><a class="el" href="class_server.html" title="This file contains the server documentation to handle requests. Each server has a name and a request ...">Server</a> name as a string </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +282,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the time remaining for the request to be completed. </p>
+<p>Updates the time remaining for the request to be completed and sets the request to nullptr if the request has finished processing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clockCycle</td><td>Current clock cycle as an int </td></tr>
